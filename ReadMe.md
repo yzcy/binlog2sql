@@ -11,6 +11,7 @@
 ~~~
 
 ## 测试例子
+作者用的python3.9.6 操作系统是centos7.5 mysql是8.0.33
 ~~~sql
 CREATE TABLE orders (
   id INT NOT NULL AUTO_INCREMENT,
