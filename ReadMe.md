@@ -1,5 +1,5 @@
 # binlog2sql    
-针对mysql8版本的binlog写的脚本，欢迎大家尝试与提出bug,满意的话给个小星星。
+针对binlog2sql mysql8版本的binlog写的脚本，5.7和5.6没有测试，欢迎大家尝试与提出bug,满意的话给个小星星。
 
 ## 参数介绍
 ~~~shell
@@ -63,3 +63,10 @@ insert into kdb.orders(`id`, `customer_name`, `order_date`, `order_total`) value
 insert into kdb.orders(`id`, `customer_name`, `order_date`, `order_total`) values("2", "Jane Smith", "2021-10-02", "250.00");
 
 ~~~
+### 有做好的二进制包Linux Centos 7.5平台的
+https://github.com/yzcy/binlog2sql/releases/tag/untagged-55204cd70a7dcf553684
+
+
+## 参考连接
+https://github.com/danfengcao/binlog2sql 
+https://github.com/julien-duponchelle/python-mysql-replication/tree/master
