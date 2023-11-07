@@ -37,7 +37,7 @@ DELETE FROM orders;
 ~~~
 ## 使用方法
 ~~~shell
-python3 toclass3.py -h=10.0.0.11 -u kevin -B kdb -t orders --start_time '2023-11-06 10:19:39' --stop_time '2023-11-07 19:09:17' --start_file binlog.000027  -p aa
+binlog2sql -h=10.0.0.11 -u kevin -B kdb -t orders --start_time '2023-11-06 10:19:39' --stop_time '2023-11-07 19:09:17' --start_file binlog.000027  -p aa
 ~~~
 
 ~~~sql
@@ -51,7 +51,7 @@ delete from kdb.orders where `id`="2" and `customer_name`="Jane Smith" and `orde
 ~~~
 
 ~~~shell
-python3 toclass3.py -h=10.0.0.11 -u kevin -B kdb -t orders --start_time '2023-11-06 10:19:39' --stop_time '2023-11-07 19:09:17' --start_file binlog.000027  -p aa -f true
+binlog2sql -h=10.0.0.11 -u kevin -B kdb -t orders --start_time '2023-11-06 10:19:39' --stop_time '2023-11-07 19:09:17' --start_file binlog.000027  -p aa -f true
 
 ~~~
 ~~~sql
@@ -64,9 +64,11 @@ insert into kdb.orders(`id`, `customer_name`, `order_date`, `order_total`) value
 
 ~~~
 ### 有做好的二进制包Linux Centos 7.5平台的
-https://github.com/yzcy/binlog2sql/releases/tag/untagged-55204cd70a7dcf553684
+
+https://github.com/yzcy/binlog2sql/releases/tag/untagged-55204cd70a7dcf553684  
+下载后放到可执行目录如/bin 
 
 
 ## 参考连接
-https://github.com/danfengcao/binlog2sql 
+https://github.com/danfengcao/binlog2sql  
 https://github.com/julien-duponchelle/python-mysql-replication/tree/master
