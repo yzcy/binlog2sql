@@ -65,7 +65,7 @@ insert into kdb.orders(`id`, `customer_name`, `order_date`, `order_total`) value
 ~~~
 ### 有做好的二进制包Linux Centos 7.5平台的
 
-https://github.com/yzcy/binlog2sql/releases/tag/untagged-55204cd70a7dcf553684  
+https://github.com/yzcy/binlog2sql/releases/tag/v1.0
 下载后放到可执行目录如/bin 
 
 
