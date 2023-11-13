@@ -10,7 +10,7 @@ def myparse():
     parser.add_argument('--start_time', dest='start_datetime', type=str,help='start datetime')
     parser.add_argument('--stop_time', dest='stop_datetime', type=str,help='stop datetime')
     parser.add_argument('-f', dest='flashback', type=bool,help='print flashback result',default=False)
-    parser.add_argument('-P', dest='port', type=str,help='port of mysql service',default=3306)
+    parser.add_argument('-P', dest='port', type=int,help='port of mysql service',default=3306)
     parser.add_argument('-H', dest='help', type=str,help='print help information')
     parser.add_argument('--start_file', dest='start_file', type=str,help='start_file')
     parser.add_argument('--stop_file', dest='stop_file', type=str,help='stop_file')
